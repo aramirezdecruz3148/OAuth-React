@@ -6,7 +6,7 @@ export default function DealtIt() {
   return (
     <>
       <h2>Do you smell that? Those are a lot of farts!</h2>
-      <h3>{ isAuthenticated && !loading ? user.name : 'My Dog'} definitely dealt the farts!</h3>
+      <h3>{ isAuthenticated && !loading ? user.name : 'My Dog'} definitely dealt them!</h3>
     </>
   );
 }

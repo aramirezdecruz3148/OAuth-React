@@ -11,8 +11,9 @@ export default function App() {
     <>
       { !isAuthenticated ? 
         <button onClick={login}>Login</button> 
-        : <button onClick={logout}>Logout</button> && <DealtIt />
+        : <button onClick={logout}>Logout</button>
       }
+      { isAuthenticated && <DealtIt />}
       <FartView />
     </>
   );
