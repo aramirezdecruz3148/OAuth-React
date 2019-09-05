@@ -5,7 +5,8 @@ export default function Farts() {
   const { isAuthenticated, loading, user } = useAuth0();
   return (
     <>
-      <h3>{ isAuthenticated && !loading ? user.name : 'My Dog'} definitely dealt it!</h3>
+      <h2>Do you smell that?</h2>
+      <h3>{ isAuthenticated && !loading ? user.name : 'My Dog'} definitely dealt the fart!</h3>
     </>
   );
 }
