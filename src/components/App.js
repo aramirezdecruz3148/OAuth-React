@@ -10,10 +10,9 @@ export default function App() {
   return (
     <>
       { !isAuthenticated ? 
-        <button onClick={login}>Login</button>
-        : <button onClick={logout}>Logout</button>
+        <button onClick={login}>Login</button> 
+        : <button onClick={logout}>Logout</button> && <DealtIt />
       }
-      <DealtIt />
       <FartView />
     </>
   );
