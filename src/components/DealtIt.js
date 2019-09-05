@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth0 } from '../AuthOProvider';
 
-export default function Farts() {
+export default function DealtIt() {
   const { isAuthenticated, loading, user } = useAuth0();
   return (
     <>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAuth0 } from '../AuthOProvider';
-import Farts from './Farts';
+import DealtIt from './DealtIt';
+import FartView from '../containers/FartView';
 
 export default function App() {
   const { isAuthenticated, user, loading, auth0Client } = useAuth0();
@@ -12,7 +13,8 @@ export default function App() {
         <button onClick={login}>Login</button>
         : <button onClick={logout}>Logout</button>
       }
-      <Farts />
+      <DealtIt />
+      <FartView />
     </>
   );
 }
